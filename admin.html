@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SecurityWeek Inc</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+    </style>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- As a heading -->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">SecurityWeek Inc</span>
+      </div>
+    </nav>
+    <form class="p-2 h-100" action="/update" method="get">
+      <!-- team names -->
+      <div class="container gap-3">
+        <div class="row">
+          <div class="col">
+            <label for="team1" class="form-label">From who</label>
+            <input
+              type="text"
+              name="name1"
+              maxlength="10"
+              class="form-control"
+              id="team1"
+            />
+          </div>
+          <div class="col">
+            <label for="team2" class="form-label">To who</label>
+            <input
+              type="text"
+              name="name2"
+              maxlength="10"
+              class="form-control"
+              id="team2"
+            />
+          </div>
+          <div class="col">
+            <label for="team2" class="form-label">Who Handle</label>
+            <input
+              type="text"
+              name="name2"
+              maxlength="10"
+              class="form-control"
+              id="team2"
+            />
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <table class="table table-striped">
+          <thead class="bg-dark text-light">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">From who</th>
+              <th scope="col">To who</th>
+              <th scope="col">Who Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="container">
+        <table class="table table-striped">
+          <thead class="bg-dark text-light">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">IP</th>
+              <th scope="col">Service</th>
+              <th scope="col">Username</th>
+              <th scope="col">Hash</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>192.168.2.2</td>
+              <td>SSH</td>
+              <td>sarah-johnson</td>
+              <td>827ccb0eea8a706c4c34a16891f84e7b</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>192.168.0.2</td>
+              <td>FTP</td>
+              <td>sarah.johnson</td>
+              <td>2f0028541ae858007640d60ddf27369e</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </form>
+  </body>
+</html>
